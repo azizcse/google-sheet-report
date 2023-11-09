@@ -9,7 +9,7 @@ export default function () {
   check(res, {
     'Main file response 200': (res) => res.status == 200,
   });
-
-  accountModule();
-  adminModule();
+  let jwt = "Jwt token here";
+  accountModule(jwt);
+  adminModule(jwt);
 }
